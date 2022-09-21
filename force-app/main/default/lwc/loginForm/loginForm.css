@@ -68,12 +68,27 @@ img {
   height: 70px;
 }
 
-.forget-remember-text {
+.container {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.forget-text {
   font-size: 11px;
   color: white;
   font-family: Arial;
   font-style: Italic;
   padding-left: 9%;
+}
+
+.rememer-me-text {
+  font-size: 11px;
+  color: white;
+  font-family: Arial;
+  font-style: Italic;
+  padding-right: 9%;
 }
 
 .icon-div {
