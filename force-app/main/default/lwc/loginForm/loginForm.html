@@ -1,0 +1,65 @@
+<template>
+  <form>
+    <div class="background">
+      <div class="centerBox">
+        <div class="image">
+          <img style="max-height: 130px" src={iconImage} />
+        </div>
+
+        <div class="center-input">
+          <div class="icon-div">
+            <lightning-icon
+              class="input-icon"
+              icon-name="utility:user"
+              alternative-text="username"
+              size="xx-small"
+            ></lightning-icon>
+          </div>
+          <input
+            type="text"
+            data-id="inputUsername"
+            placeholder="Username"
+            class="slds-input input-element"
+            onchange={handleUserNameChange}
+            required
+          />
+        </div>
+        <div class="center-input">
+          <div class="icon-div">
+            <lightning-icon
+              class="input-icon"
+              icon-name="utility:lock"
+              alternative-text="username"
+              size="xx-small"
+            ></lightning-icon>
+          </div>
+          <input
+            type="password"
+            data-id="inputPassword"
+            placeholder="Password"
+            class="slds-input input-element"
+            onchange={handlePasswordChange}
+            required
+          />
+        </div>
+        <div class="container">
+          <div class="forget-text">
+            <p>Rememer me</p>
+          </div>
+          <div class="rememer-me-text">
+            <p>Forget Password?</p>
+          </div>
+        </div>
+        <div class="center-button">
+          <button
+            type="submit"
+            class="login-button slds-button"
+            onclick={handleLogin}
+          >
+            LOGIN
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</template>
